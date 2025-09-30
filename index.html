@@ -3,93 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Content & Income Workshop | LifeTechSG</title>
+    <title>Retrenchment-Proof Your Income with AI | LifeTechSG Workshop</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <style>
-        body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; background-color: #0F172A; }
+        body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; background-color: #020617; scroll-behavior: smooth; }
         .gradient-text { background: linear-gradient(90deg, #38BDF8, #A78BFA, #F472B6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .form-input:focus { outline: none; border-color: #A78BFA; box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.3); }
-        .hero-bg { background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 1)), url('ai-content-hero.png'); background-size: cover; background-position: center; }
+        .hero-bg { background-image: linear-gradient(rgba(2, 6, 23, 0.9), rgba(2, 6, 23, 1)), url('retrenchment-proof-hero.jpg'); background-size: cover; background-position: center; }
         .cta-button { transition: all 0.3s ease; }
-        .cta-button:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
-        .highlight-feature { border-left: 3px solid #A78BFA; }
+        .cta-button:hover { transform: translateY(-4px) scale(1.02); box-shadow: 0 10px 25px rgba(0,0,0,0.3); }
+        .fade-in { opacity: 0; animation: fadeIn 1s ease-in-out forwards; }
+        .fade-in-delay { opacity: 0; animation: fadeIn 1s ease-in-out 0.5s forwards; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
         #exit-intent-modal { transition: opacity 0.3s ease-in-out; }
         .modal-content { transition: transform 0.3s ease-in-out; }
     </style>
 </head>
-<body class="bg-slate-900 text-gray-200">
+<body class="bg-slate-950 text-gray-200">
 
-    <!-- Funnel Level 1: The "What Is It?" & The Big Promise -->
+    <!-- Funnel Level 1: The Hook & The Big Promise -->
     <section class="hero-bg min-h-screen flex flex-col items-center justify-center p-4 text-center">
         <div class="max-w-4xl">
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white">
-                <span class="gradient-text">An AI-Powered Content Machine</span> Using  You Can Build in 3 Hours.
+            <p class="text-lg text-yellow-300 font-semibold tracking-wider">In an era of mass retrenchments in Singapore...</p>
+            <h1 class="mt-2 text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white">
+                How To Build a 'Recession-Proof' Income Stream in Just 3 Hours, Using The New #1 Skill: <span class="gradient-text">Talking To AI.</span>
             </h1>
             <p class="mt-6 max-w-3xl mx-auto text-lg sm:text-xl text-gray-300">
-                Stop trading your time for money. Discover the end-to-end system that turns AI into your personal content creator, marketer, and salesperson—working for you 24/7, even while you sleep.
+                Stop worrying about job security. Discover the system that turns your existing knowledge into a 24/7 automated income asset, so you can take back control of your financial future, no matter what the economy does.
             </p>
             <div class="mt-8">
-                <a href="#register" class="cta-button bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-4 px-10 rounded-full text-lg shadow-lg">
-                    Claim My Spot Now &rarr;
+                <a href="#story" class="cta-button bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-4 px-10 rounded-full text-lg shadow-lg">
+                    Discover The Story & The System &rarr;
                 </a>
-                <p class="mt-4 text-sm text-gray-400">Seats are filling up fast... Don't miss out.</p>
             </div>
         </div>
     </section>
 
-    <!-- Funnel Level 2: The Value Proposition & Objection Handling ("What's it worth?") -->
+    <!-- Funnel Level 2: The Story & The 'Aha!' Moment -->
+    <section id="story" class="py-20 px-4 bg-slate-950">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="fade-in">
+                <img src="retrenchment-proof-hero.png" alt="A Singaporean professional who successfully pivoted to an AI-based business after retrenchment" class="rounded-2xl shadow-2xl">
+            </div>
+            <div class="fade-in text-left">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white">Her Name Is Cassandra Ong. She Was Retrenched After 12 Years In The Corporate World. Her Story Could Be Yours.</h2>
+                <p class="mt-4 text-lg text-gray-400">Until March 2023, Cassandra was a successful professional with a great track record. Then the unexpected happened: her role was made redundant. In her own words, she grappled with a "whirlwind of emotions – shock, loss and a gnawing sense of rejection."</p>
+                <p class="mt-4 text-lg text-gray-400">The panic set in. The old way—just finding another corporate job—felt uncertain and out of her control.</p>
+                <p class="mt-6 text-lg text-gray-300">But instead of just updating her resume, Cassandra saw the rise of AI not as a threat, but as the ultimate leverage. She didn't learn to code. She learned to <strong class="text-white">talk to AI.</strong> She learned to prompt.</p>
+                 <p class="mt-4 text-xl font-semibold text-white">She took her years of experience and used AI to systemise it, turning her knowledge into a scalable business. Today, she runs her own successful marketing agency, OtterHalf, from Singapore.</p>
+                <p class="mt-4 text-lg text-gray-400">She isn't just employed; <strong class="gradient-text font-bold">she's indispensable.</strong> She built her own safety net.</p>
+                <p class="text-xs text-gray-500 mt-2">Source: Channel NewsAsia</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Funnel Level 3: The System & FREE E-Book Offer -->
     <section class="py-20 px-4 bg-slate-900">
-        <div class="max-w-5xl mx-auto text-center">
-            <h2 class="text-3xl sm:text-4xl font-bold text-white">Let's Be Honest: Acquiring These Skills Individually Would Cost a Fortune.</h2>
-            <p class="mt-4 text-lg text-gray-400">Digital marketing agencies charge thousands. Online courses take months and cost hundreds. Here's what you're getting, condensed into one powerful afternoon:</p>
-            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <div class="text-left p-6">
-                     <ul class="space-y-4 text-lg">
-                        <li class="flex items-center"><span class="text-green-400 mr-3">✓</span> <strong>Pro-Level Marketing Strategy:</strong> Normally a $1,500 consultant fee.</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-3">✓</span> <strong>AI Prompt Engineering Secrets:</strong> Advanced courses cost $500+.</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-3">✓</span> <strong>Viral Video Creation & Editing:</strong> Video workshops are easily $300.</li>
-                        <li class="flex items-center"><span class="text-green-400 mr-3">✓</span> <strong>Content-to-Sales Conversion Funnel:</strong> A priceless skill for any business.</li>
-                    </ul>
-                     <p class="mt-6 text-2xl font-bold text-red-500 line-through">Total Real-World Value: Over $2,500</p>
-                </div>
-                <div class="bg-slate-800 rounded-2xl p-8 border border-purple-500 shadow-2xl">
-                    <img src="value-stack.png" alt="Comparison of course value vs price" class="mx-auto mb-6 h-40 object-contain">
-                    <p class="text-lg text-gray-300">We've packaged this entire <strong class="text-white">$2,500+ system</strong> into a single, high-impact workshop. But you won't pay anywhere near that. Not even close.</p>
-                    <p class="mt-4 text-4xl font-bold text-white">Your Investment Today Is Not $2,500...</p>
-                    <a href="#register" class="mt-6 inline-block cta-button bg-white text-slate-900 font-bold py-3 px-8 rounded-full text-md">
-                        See The Shockingly Low Price &darr;
-                    </a>
-                </div>
+        <div class="max-w-5xl mx-auto text-center fade-in">
+             <h2 class="text-3xl sm:text-4xl font-bold text-white">Cassandra Didn't Get Lucky. She Built a System.</h2>
+            <div class="mt-12 text-center bg-slate-800 border border-purple-500 rounded-2xl p-8 shadow-2xl">
+                 <h3 class="text-2xl font-bold gradient-text">As A Starting Point, We Want To Give You The Foundation For FREE.</h3>
+                 <p class="mt-2 text-lg text-gray-300">Everyone who attends our workshop will receive a free copy of our new e-book:</p>
+                <p class="mt-4 text-3xl font-bold text-white">"Prompt Engineering 101: The Starter's Guide to Commanding AI"</p>
+                <p class="mt-4 text-lg text-gray-400">This guide alone contains the fundamental skill of 'talking to AI'. But the guide is just the theory. The workshop is where you turn that theory into an income-generating asset...</p>
             </div>
-        </div>
-    </section>
-    
-    <!-- Funnel Level 3: The Offer & Scarcity ("Why Act Now?") -->
-    <section class="py-20 px-4 bg-slate-800" style="background-image: url('limited-seats.png'); background-size: cover; background-position: center; background-blend-mode: overlay;">
-         <div class="max-w-4xl mx-auto text-center bg-black bg-opacity-70 p-8 rounded-xl">
-            <h2 class="text-3xl sm:text-4xl font-bold gradient-text">Because This Is a One-Time Pilot Program, We're Making It an Irresistible Offer.</h2>
-            <p class="mt-4 text-lg text-white">We need feedback. That's why we're slashing the price, but only for the first 10 people who are serious about changing their financial future. This isn't a gimmick; it's a strategic decision. Once these seats are gone, the price will permanently increase.</p>
-            <div class="mt-8 bg-slate-900 border-2 border-pink-500 rounded-lg p-8 inline-block shadow-lg">
-                <p class="text-xl text-gray-300">For the First 10 Action-Takers Only:</p>
-                <p class="my-2 text-6xl font-extrabold text-white">$39</p>
-                <p class="text-lg font-semibold text-green-400">PLUS, get a $10 cash refund when you attend!</p>
-                <p class="mt-2 text-sm text-gray-400">(That means you're really only paying $29 to acquire a $2,500 skillset!)</p>
-            </div>
-             <p class="mt-6 text-yellow-300 font-semibold text-xl animate-pulse">🏃💨 WARNING: Seats are claimed on a first-come, first-served basis.</p>
         </div>
     </section>
 
-    <!-- Funnel Level 4: The Final Call To Action (Registration) -->
-    <section id="register" class="py-20 px-4 bg-slate-900">
-        <div class="max-w-lg mx-auto">
+    <!-- Funnel Level 4: The Value Stack -->
+    <section class="py-20 px-4 bg-slate-950">
+        <div class="max-w-5xl mx-auto text-center fade-in">
+            <h2 class="text-3xl sm:text-4xl font-bold text-white">Here's The Full "Retrenchment-Proof" System You'll Build:</h2>
+             <div class="mt-12 text-left bg-slate-900 border border-gray-700 rounded-2xl p-8 shadow-2xl">
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <ul class="space-y-4 text-lg">
+                            <li class="flex items-start"><span class="text-green-400 mr-3 mt-1">✓</span><div><strong>AI-Powered Marketing Strategy:</strong> Learn to command AI to build a pro-level marketing plan in minutes. <span class="block text-gray-400">(Real World Value: $1,500)</span></div></li>
+                            <li class="flex items-start"><span class="text-green-400 mr-3 mt-1">✓</span><div><strong>Viral Video Prompting & Editing:</strong> Turn AI scripts into TikTok videos that grab attention using simple tools. <span class="block text-gray-400">(Real World Value: $500)</span></div></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="space-y-4 text-lg">
+                             <li class="flex items-start"><span class="text-green-400 mr-3 mt-1">✓</span><div><strong>Automated Sales Funnels:</strong> A repeatable process to turn your content's views into actual income. <span class="block text-gray-400">(Real World Value: A Priceless Skill)</span></div></li>
+                            <li class="flex items-start"><span class="text-green-400 mr-3 mt-1">✓</span><div><strong>Our Private Prompt-Engineered Templates:</strong> Copy-paste our secret prompts to get exactly what you want from AI, every time. <span class="block text-gray-400">(Real World Value: $300)</span></div></li>
+                        </ul>
+                    </div>
+                </div>
+                 <p class="mt-8 text-center text-2xl font-bold text-red-500 line-through">Total Value You're Getting: Over $2,300</p>
+                 <div class="text-center mt-6">
+                    <a href="#register" class="cta-button bg-white text-slate-900 font-bold py-3 px-8 rounded-full text-lg">
+                        Your Investment Is NOT $2,500... See The Shocking Price &darr;
+                    </a>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Funnel Level 5: The 'No-Brainer' Offer & Scarcity -->
+    <section class="py-20 px-4 bg-slate-900">
+         <div class="max-w-4xl mx-auto text-center bg-black bg-opacity-40 p-8 rounded-2xl border border-pink-500 shadow-2xl fade-in">
+            <h2 class="text-3xl sm:text-4xl font-bold gradient-text">This Is A One-Time Pilot Program. We're Not Asking For Your Money. We're Asking For Your Feedback.</h2>
+            <p class="mt-4 text-lg text-white">That's why we're making this an irresistible offer. For the first 10 people to help us refine this workshop, we're not only slashing the price but actually PAYING YOU to attend.</p>
+            <div class="mt-8 bg-slate-800 border-2 border-green-400 rounded-lg p-8 inline-block shadow-lg">
+                <p class="text-xl text-gray-300">Investment for the first 10 Action-Takers:</p>
+                <p class="my-2 text-6xl font-extrabold text-white">$39</p>
+                <p class="text-xl font-semibold text-green-400">We will hand you a $10 cash refund upon attendance.</p>
+                <p class="mt-2 text-gray-400">(You are literally getting a $2,500+ skillset for just $29!)</p>
+            </div>
+             <p class="mt-6 text-yellow-300 font-semibold text-xl animate-pulse">🏃💨 WARNING: As of this morning, 7 of the 10 seats have been claimed.</p>
+        </div>
+    </section>
+
+    <!-- Funnel Level 6: The Guarantee (Risk Reversal) -->
+    <section class="py-20 px-4 bg-slate-950">
+        <div class="max-w-3xl mx-auto text-center fade-in border-2 border-dashed border-yellow-400 rounded-2xl p-10">
+            <h2 class="text-3xl font-bold text-white">Our "Retrenchment-Proof" Guarantee</h2>
+            <p class="mt-4 text-lg text-gray-300">We are so confident that this is the most valuable skill you can learn this year, we'll make it risk-free. If you attend the full 3-hour workshop and honestly feel you haven't received a clear, actionable plan to start building an AI-powered income stream, just let us know at the end.</p>
+            <p class="mt-6 text-2xl font-bold text-yellow-400">We will refund your $39 fee on the spot, you can keep the $10 cash, AND you can keep the "Prompt Engineering 101" e-book as our gift.</p>
+            <p class="mt-4 text-gray-400">That's how certain we are that this will change the way you see your career and income forever. You have absolutely nothing to lose and a lifetime of security to gain.</p>
+        </div>
+    </section>
+
+    <!-- Funnel Level 7: The Final CTA & Registration -->
+    <section id="register" class="py-20 px-4">
+        <div class="max-w-lg mx-auto fade-in">
             <div class="bg-slate-800 border border-gray-700 rounded-2xl p-6 sm:p-8 shadow-2xl">
                 <div id="registration-form-container">
-                    <h2 class="text-3xl font-bold text-center text-white mb-2">Yes! I'm Ready to Build My AI Income Stream!</h2>
-                    <p class="text-center text-gray-400 mb-6">Complete your registration below to lock in your exclusive $39 pilot pricing.</p>
-                    
+                    <h2 class="text-3xl font-bold text-center text-white mb-2">Yes! I'm Ready To Build My Future!</h2>
+                    <p class="text-center text-gray-400 mb-6">Complete the 60-second registration below to claim one of the final spots and receive your free e-book upon confirmation.</p>
                      <div class="text-sm text-gray-300 space-y-2 mb-6 p-4 bg-slate-700 rounded-lg">
                         <p>🗓️ <strong class="font-semibold text-white">Date:</strong> 18 October (Saturday)</p>
                         <p>⏰ <strong class="font-semibold text-white">Time:</strong> 11:00 AM - 2:00 PM</p>
@@ -100,7 +145,6 @@
                         <input type="text" id="name" placeholder="Your Full Name" class="form-input w-full bg-slate-900 border border-gray-600 rounded-lg px-4 py-3 text-white transition duration-300" required>
                         <input type="email" id="email" placeholder="Your Best Email Address" class="form-input w-full bg-slate-900 border border-gray-600 rounded-lg px-4 py-3 text-white transition duration-300" required>
                         <input type="tel" id="contact" placeholder="Your Contact Number" class="form-input w-full bg-slate-900 border border-gray-600 rounded-lg px-4 py-3 text-white transition duration-300" required>
-                        
                         <div class="pt-2">
                              <div class="relative flex items-start">
                                 <div class="flex items-center h-5">
@@ -111,20 +155,18 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="pt-4">
-                            <button id="submit-btn" class="w-full cta-button bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold py-4 px-6 rounded-full text-xl shadow-lg">
-                                Secure My Spot Now for $39
+                            <button id="submit-btn" class="w-full cta-button bg-gradient-to-r from-green-500 to-teal-500 text-white font-bold py-4 px-6 rounded-full text-xl shadow-lg">
+                                Claim My Spot & Free E-book!
                             </button>
                             <div id="loading-spinner" class="hidden mt-4 flex justify-center"><svg class="animate-spin h-8 w-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg></div>
                         </div>
                     </div>
                 </div>
-
                 <div id="success-message" class="hidden text-center">
                     <div class="w-16 h-16 mx-auto mb-6 bg-green-500 rounded-full flex items-center justify-center"><svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
                     <h2 class="text-3xl font-bold gradient-text mb-2">Congratulations! You're In!</h2>
-                    <p class="text-gray-300 text-lg">Your spot is confirmed. We've sent a confirmation to your email. Get ready to transform your income potential. We'll see you there!</p>
+                    <p class="text-gray-300 text-lg">Your spot is confirmed. Your e-book and workshop details are on their way to your inbox. This is the first step to taking back control. We'll see you there!</p>
                 </div>
             </div>
         </div>
@@ -136,13 +178,13 @@
     </a>
 
     <!-- Exit-Intent Modal -->
-    <div id="exit-intent-modal" class="hidden fixed inset-0 bg-black bg-opacity-70 z-50 flex items-center justify-center p-4">
+    <div id="exit-intent-modal" class="hidden fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center p-4 opacity-0">
         <div class="modal-content bg-slate-800 rounded-2xl shadow-2xl max-w-lg w-full p-8 text-center transform scale-95 border border-purple-500">
             <h2 class="text-3xl font-bold gradient-text">Wait! Are You Sure?</h2>
-            <p class="mt-4 text-lg text-gray-300">You're about to miss out on a <strong class="text-white">$2,500 skillset for just $29</strong>. This pilot offer will not be repeated. If you're serious about creating a new income stream, this is your moment.</p>
+            <p class="mt-4 text-lg text-gray-300">You're about to miss out on the single most valuable skill for 2025 and beyond. This pilot offer will <strong class="text-white">not be repeated.</strong> For just $29, you can build a skill that secures your future. Isn't that worth it?</p>
             <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#register" id="stay-btn" class="w-full cta-button bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-3 px-6 rounded-full">Okay, I'll Secure My Spot</a>
-                <button id="close-modal-btn" class="w-full bg-transparent border border-gray-600 text-gray-400 hover:bg-gray-700 hover:text-white font-bold py-3 px-6 rounded-full transition">No thanks, I'll pass</button>
+                <a href="#register" id="stay-btn" class="w-full cta-button bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-3 px-6 rounded-full">Okay, You're Right. I'll Register.</a>
+                <button id="close-modal-btn" class="w-full bg-transparent border border-gray-600 text-gray-400 hover:bg-gray-700 hover:text-white font-bold py-3 px-6 rounded-full transition">No thanks, I'll risk it</button>
             </div>
         </div>
     </div>
@@ -234,23 +276,22 @@
         const showModal = () => {
             exitModal.classList.remove('hidden');
             setTimeout(() => {
+                exitModal.classList.add('opacity-100');
                 exitModal.querySelector('.modal-content').classList.remove('scale-95');
+                exitModal.querySelector('.modal-content').classList.add('scale-100');
             }, 10);
         };
         
         const hideModal = () => {
             exitModal.querySelector('.modal-content').classList.add('scale-95');
-            exitModal.classList.add('opacity-0');
+            exitModal.classList.remove('opacity-100');
             setTimeout(() => {
                  exitModal.classList.add('hidden');
-                 exitModal.classList.remove('opacity-0');
             }, 300);
         };
 
         document.addEventListener('mouseout', (e) => {
-            // If the mouse leaves the viewport on the top, show the modal
-            if (e.clientY <= 0) {
-                 // But don't show it if it's already been shown
+             if (!e.toElement && !e.relatedTarget && e.clientY < 10) {
                 if(sessionStorage.getItem('exitIntentShown')) return;
                 showModal();
                 sessionStorage.setItem('exitIntentShown', 'true');
@@ -260,6 +301,20 @@
         closeModalBtn.addEventListener('click', hideModal);
         stayBtn.addEventListener('click', hideModal);
 
+        // --- Intersection Observer for animations ---
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
     </script>
 </body>
 </html>
+
