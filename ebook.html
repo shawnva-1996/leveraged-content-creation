@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-book: Prompt Engineering 101</title>
+    <style>
+        /* A4 Page Styling for PDF Conversion */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FAFAFA;
+            font-family: Arial, sans-serif;
+            -webkit-print-color-adjust: exact; /* Ensures colors are printed */
+        }
+
+        .invoice-page {
+            width: 210mm;
+            min-height: 297mm; /* Use min-height to allow content to flow */
+            page-break-after: always;
+            box-sizing: border-box;
+            padding: 20mm;
+            background-color: white;
+            position: relative;
+            overflow: hidden; /* Ensures content stays within the page boundaries */
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* General Typography */
+        h1, h2, h3, p, ul {
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-size: 32pt;
+            color: #1a2a4a;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 22pt;
+            color: #3b82f6; /* A nice blue color */
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            font-size: 16pt;
+            color: #1a2a4a;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p, li {
+            font-size: 12pt;
+            color: #333;
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        ul {
+            list-style-position: inside;
+            padding-left: 20px;
+        }
+
+        strong {
+            color: #3b82f6;
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f0f0f0;
+            padding: 8px;
+            border-radius: 4px;
+            font-size: 11pt;
+            display: block; /* Make code blocks take full width */
+            white-space: pre-wrap; /* Wrap long code lines */
+            margin: 10px 0;
+            border: 1px solid #ddd;
+        }
+        
+        /* UPDATED: Image Styling for float layout */
+        .image-container {
+            float: right;
+            margin-left: 15px;
+            margin-bottom: 10px;
+            width: 60mm; /* A fixed width for square images */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+        }
+
+        /* UPDATED: Clearfix for floating elements */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Specific Page Elements */
+        .cover-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .cover-page h1 {
+            font-size: 48pt;
+            color: #1a2a4a;
+        }
+        
+        .cover-page h3 {
+             font-size: 20pt;
+             color: #555;
+             font-weight: normal;
+        }
+
+        .page-footer {
+            position: absolute;
+            bottom: 10mm;
+            left: 20mm;
+            right: 20mm;
+            text-align: center;
+            font-size: 10pt;
+            color: #888;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Cover Page -->
+    <div class="invoice-page cover-page">
+        <h1>Prompt Engineering 101</h1>
+        <h3>The Starter's Guide to Commanding AI</h3>
+        <p style="margin-top: 50px; font-size: 14pt;">An exclusive guide from LifeTechSG</p>
+    </div>
+
+    <!-- Introduction -->
+    <div class="invoice-page">
+        <h2>Introduction: Your New Superpower</h2>
+        <p>
+            In an economy where headlines are dominated by layoffs and uncertainty, the ability to create value independently has become more than a luxury—it's a necessity. The ground is shifting, and the most secure career is the one you build for yourself, brick by brick, with skills that are not just relevant, but revolutionary.
+        </p>
+        <p>
+            <strong>"Talking to AI" is that skill.</strong> It’s not about coding or complex algorithms. It's the art and science of giving precise instructions to powerful AI models to get exactly what you need. It is the closest thing we have to a superpower: the ability to generate expert-level text, marketing plans, and creative content on demand.
+        </p>
+        <p>
+            This guide is your first step. It will provide the foundational knowledge you need to turn your ideas, your expertise, and your passions into tangible assets. What you learn in these pages is the key to unlocking a powerful new way of working, creating, and earning.
+        </p>
+    </div>
+
+    <!-- Chapter 1 -->
+    <div class="invoice-page">
+        <div class="page-content">
+            <h2>Chapter 1: What is a Prompt?</h2>
+            <h3>(And Why It's More Than Just a Question)</h3>
+            <div class="clearfix">
+                <div class="image-container">
+                    <img src="prompt-conversation.png" alt="Conceptual image of a human and AI brain in conversation">
+                </div>
+                <p>
+                    Many people approach AI like a simple search engine, typing in basic questions and getting generic answers. This is a fundamental misunderstanding. A prompt is not just a question; it's a command, a set of instructions, and a creative brief all rolled into one.
+                </p>
+                <p>
+                    <strong>Deconstructing the myth: It's not magic, it's a conversation.</strong> Think of interacting with an AI as briefing a highly intelligent but very literal-minded intern. If you give vague instructions, you'll get a vague result. But if you provide clear, detailed instructions, you'll get precisely what you asked for. The magic isn't in the AI; it's in the quality of your prompt.
+                </p>
+            </div>
+            <p>
+                <strong>Garbage In, Garbage Out.</strong> This is the golden rule of prompt engineering. The AI doesn't "know" what you want unless you tell it. The time you invest in crafting a well-structured prompt will save you hours of editing and frustration later. A great prompt is the difference between a useless paragraph and a perfect piece of marketing copy.
+            </p>
+            <p>
+                <strong>The Goal: Turning the AI into your expert intern who works 24/7.</strong> When you master prompting, you are no longer just a user; you are a manager. You are directing an infinitely knowledgeable and tireless resource to work for you, creating content, drafting emails, and building business strategies while you focus on the big picture.
+            </p>
+        </div>
+    </div>
+    
+    <!-- Chapter 2 -->
+    <div class="invoice-page">
+         <div class="page-content">
+            <h2>Chapter 2: The 5 Core Components of a Perfect Prompt</h2>
+             <div class="clearfix">
+                <div class="image-container">
+                    <img src="prompt-components.png" alt="Infographic showing the 5 components of a perfect prompt">
+                </div>
+                <p>
+                    To get consistently great results, a powerful prompt should contain five key elements. We use the acronym <strong>PTCFT</strong> to remember them.
+                </p>
+                <h3>P for Persona</h3>
+                <p>
+                    Always start by telling the AI who it should be. Giving it a role focuses its knowledge and style. Instead of a generic response, you get an expert's perspective.
+                    <br><em>Example:</em> <code>"Act as a world-class Singaporean food blogger..."</code>
+                </p>
+                <h3>T for Task</h3>
+                <p>
+                    Be explicit and direct about what you want the AI to do. Use action verbs. The clearer the task, the better the output.
+                    <br><em>Example:</em> <code>"...write three engaging hooks for a TikTok video about a new hawker stall."</code>
+                </p>
+            </div>
+            <h3>C for Context</h3>
+            <p>
+                This is where you provide the crucial details. What is the product? Who is the audience? What is the unique selling proposition? The more relevant context you provide, the more tailored the response will be.
+                <br><em>Example:</em> <code>"The stall sells modern laksa with a secret, home-made rempah. The target audience is young foodies aged 20-35."</code>
+            </p>
+            <h3>F for Format</h3>
+            <p>
+                Tell the AI exactly how you want the output structured. Do you want a list? A table? A paragraph? A script? Don't leave it to chance.
+                <br><em>Example:</em> <code>"Format the output as a numbered list."</code>
+            </p>
+            <h3>T for Tone</h3>
+            <p>
+                Define the personality of the writing. This ensures the content connects with your intended audience.
+                <br><em>Example:</em> <code>"The tone should be witty, informal, and exciting."</code>
+            </p>
+        </div>
+    </div>
+
+    <!-- Chapter 3 -->
+    <div class="invoice-page">
+        <div class="page-content">
+            <h2>Chapter 3: 5 'Copy-Paste' Prompts for a Viral Video Script</h2>
+            <div class="clearfix">
+                 <div class="image-container">
+                    <img src="viral-video-blueprint.png" alt="Blueprint of a viral video script on a smartphone">
+                </div>
+                <p>
+                    Here are five powerful prompt templates based on the PTCFT framework. Use them as a starting point to generate your first video script.
+                </p>
+                <p><strong>1. The "Problem/Agitate/Solve" Hook Prompt:</strong><br>
+                <code>Act as a scriptwriter for a viral TikTok video. Your task is to write a 3-part video hook using the Problem-Agitate-Solve formula. The context is [Your Product/Service] for [Your Audience]. The tone should be dramatic and relatable.</code>
+                </p>
+            </div>
+            <p><strong>2. The "Storytelling" Prompt:</strong><br>
+            <code>Act as a master storyteller. Your task is to write a short, compelling narrative script for a 30-second video. The story should be about a character who struggled with [The Problem] and overcame it using [Your Solution]. The tone should be inspirational.</code>
+            </p>
+            <p><strong>3. The "Top 3 Mistakes" Prompt:</strong><br>
+            <code>Act as an expert in [Your Niche]. Your task is to create a script for a video titled "Top 3 Mistakes People Make When [Doing Something Related to Your Niche]". For each mistake, briefly explain why it's a problem. The tone should be authoritative and helpful.</code>
+            </p>
+            <p><strong>4. The "Myth vs. Fact" Prompt:</strong><br>
+            <code>Act as a myth-buster. Your task is to write a video script that debunks a common myth about [Your Topic]. Start with the myth, then dramatically reveal the fact. The tone should be surprising and informative.</code>
+            </p>
+            <p><strong>5. The "Call to Action" Prompt:</strong><br>
+            <code>Act as a persuasive marketing expert. Your task is to write a clear and compelling call to action for the end of a video. The context is that the viewer has just learned about [Your Topic]. The call to action is to [Your Desired Action]. The tone should be urgent but friendly.</code>
+            </p>
+        </div>
+    </div>
+
+    <!-- Chapter 4 & 5 -->
+    <div class="invoice-page">
+        <div class="page-content">
+            <h2>Chapter 4: The "Chain of Thought" Technique</h2>
+            <div class="clearfix">
+                <div class="image-container">
+                     <img src="chain-of-thought.png" alt="Diagram showing the chain of thought process">
+                </div>
+                <p>
+                    Sometimes, for more complex tasks, you need the AI to "think" before it writes. The "Chain of Thought" technique is a simple but incredibly powerful way to improve the quality and logic of your outputs.
+                </p>
+                <p>
+                    Instead of asking for the final output directly, you first ask the AI to break down its process.
+                </p>
+                <p>
+                    <strong>How to do it:</strong> Simply add the phrase <em>"First, think step-by-step about how you will accomplish this task. Then, write the final output."</em> to your prompt.
+                </p>
+            </div>
+            <p>
+                This forces the AI to outline its logic, identify key points, and structure its response more coherently before generating the final text. It’s a simple trick that dramatically reduces errors and produces more nuanced, well-reasoned content. In the full workshop, we will show you how to apply this to build an entire month's content calendar.
+            </p>
+
+            <h2>Chapter 5: Beyond the E-book: Your Next Steps</h2>
+            <div class="clearfix">
+                 <div class="image-container">
+                    <img src="workshop-system.png" alt="Illustration showing the e-book as a gear in a larger income system machine">
+                </div>
+                <p>
+                    You now hold the foundational keys to prompt engineering. You understand that a prompt is a detailed instruction, not a simple question, and you have the PTCFT framework to guide you. You even have five battle-tested prompts to start creating content immediately.
+                </p>
+                <p>
+                    But this is just the beginning.
+                </p>
+            </div>
+            <p>
+                <strong>The information in this guide is the "what." Our live workshop is the "how."</strong> In the workshop, we will take these foundational skills and plug them into a complete, end-to-end system. You will move from writing single prompts to building an automated content machine that generates a predictable stream of income.
+            </p>
+            <p>
+                You will learn how to turn these scripts into actual videos, how to get them seen by the right people, and most importantly, how to convert that attention into reliable sales. The skills in this e-book make you competent. The system you'll build in our workshop is designed to make you <strong>retrenchment-proof</strong>.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
+

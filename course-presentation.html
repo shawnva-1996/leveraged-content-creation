@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered TikTok Content Accelerator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- NEW BRIGHT THEME CSS --- */
+        :root {
+            --primary-color: #007BFF; /* Bright Blue */
+            --background-color: #F8F9FA; /* Light Grey */
+            --text-color: #212529; /* Dark Grey */
+            --card-color: #FFFFFF; /* White */
+            --header-height: 60px;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--background-color); color: var(--text-color); line-height: 1.6; }
+        header { position: fixed; top: 0; width: 100%; height: var(--header-height); background-color: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); display: flex; justify-content: center; align-items: center; z-index: 1000; border-bottom: 1px solid #dee2e6; overflow-x: auto; }
+        nav { display: flex; flex-wrap: nowrap; }
+        nav a { color: var(--text-color); text-decoration: none; margin: 0 12px; font-weight: 600; transition: color 0.3s ease; white-space: nowrap; }
+        nav a.active, nav a:hover { color: var(--primary-color); }
+        main { padding-top: var(--header-height); }
+        section { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 40px 20px; border-bottom: 1px solid #e9ecef; opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+        section.visible { opacity: 1; transform: translateY(0); }
+        .container { width: 100%; max-width: 1100px; margin: 0 auto; text-align: center; }
+        h1 { font-size: 3rem; color: var(--primary-color); margin-bottom: 10px; }
+        h2 { font-size: 2.5rem; margin-bottom: 20px; border-bottom: 2px solid var(--primary-color); display: inline-block; padding-bottom: 10px; }
+        h3 { font-size: 1.5rem; color: var(--primary-color); margin-top: 20px; margin-bottom: 10px; }
+        p { font-size: 1.1rem; margin-bottom: 20px; max-width: 800px; margin-left: auto; margin-right: auto; }
+        ul { list-style: none; padding: 0; }
+        ul li { margin-bottom: 10px; }
+        ul.checklist li { font-size: 1.2rem; font-weight: 600; text-align: left; display: inline-block;}
+        ul.checklist li::before { content: '✅'; margin-right: 10px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; width: 100%; margin-top: 30px; }
+        .card { background-color: var(--card-color); padding: 25px; border-radius: 10px; text-align: left; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #e9ecef; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0, 123, 255, 0.1); }
+        pre { background-color: #e9ecef; color: #212529; padding: 15px; border-radius: 5px; text-align: left; white-space: pre-wrap; word-wrap: break-word; font-size: 0.9rem; margin-top: 15px; border: 1px solid #ced4da; }
+        .image-placeholder { width: 100%; height: 250px; background-color: #e9ecef; border-radius: 8px; display: flex; justify-content: center; align-items: center; margin-top: 20px; border: 2px dashed #ced4da; object-fit: cover; }
+        .image-placeholder-small { height: 150px; background-size: cover; background-position: center; }
+        @media (max-width: 768px) { h1 { font-size: 2.5rem; } h2 { font-size: 2rem; } nav a { margin: 0 10px; font-size: 0.9rem; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#welcome" class="active">Welcome</a>
+            <a href="#my-why">My Why</a>
+            <a href="#icebreaker">Kahoot!</a>
+            <a href="#live-demo">Demo</a>
+            <a href="#voice-login">Voice AI: Login</a>
+            <a href="#voice-dashboard">Dashboard</a>
+            <a href="#voice-generate">Generate</a>
+            <a href="#ai-visuals">Visuals</a>
+            <a href="#assembly-import">Import</a>
+            <a href="#assembly-captions">Captions</a>
+            <a href="#assembly-export">Export</a>
+            <a href="#practical">Practical</a>
+            <a href="#launch">Launch</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="welcome" class="visible">
+            <div class="container">
+                <p>LifeTechSG Presents</p>
+                <h1>AI-Powered TikTok Content Accelerator</h1>
+                <p><strong>Go from Zero to Viral Video in 3 Hours.</strong></p>
+                <ul class="checklist">
+                    <li>Effortless: Super simple to master.</li>
+                    <li>Efficient: 90% results, 10% of the time.</li>
+                    <li>Viral: Learn the secrets to pop.</li>
+                    <li>Profitable: Convert views to sales.</li>
+                </ul>
+                <img src="hero-background.png" alt="Dynamic abstract art of AI and social media icons" class="image-placeholder">
+            </div>
+        </section>
+        
+        <section id="my-why">
+            <div class="container">
+                <h2>Part 1: My "Why"</h2>
+                <p>My journey from traditional software engineering to the revolution of AI content creation.</p>
+                <div class="card" style="text-align:center;">
+                    <ul>
+                        <li>🎓 Graduated with a Software Engineering Degree.</li>
+                        <li>🚧 Faced a wall: The skills felt inefficient for modern needs.</li>
+                        <li>💡 Discovered AI & Content Leverage.</li>
+                        <li>🚀 Unlocked the <strong>90/10 Principle:</strong> 90% of results from 10% of the effort.</li>
+                    </ul>
+                </div>
+                <img src="my-why-journey.png" alt="A person at a crossroads choosing between traditional code and a glowing AI portal" class="image-placeholder">
+            </div>
+        </section>
+        
+        <section id="icebreaker">
+            <div class="container">
+                <h2>Part 2: Icebreaker</h2>
+                <p>Let's break the ice and bust some myths with a fun, interactive game.</p>
+                <div class="card" style="text-align:center;">
+                    <h3>Get Ready for...</h3>
+                    <p style="font-size: 1.5rem; color: var(--primary-color);"><strong>"TikTok AI Mythbusters!"</strong></p>
+                    <p>Join on your phone. The winner gets a prize!</p>
+                </div>
+                <img src="kahoot-icebreaker.jpg" alt="Diverse group of people laughing while looking at their phones during a workshop" class="image-placeholder">
+            </div>
+        </section>
+
+        <section id="live-demo">
+            <div class="container">
+                <h2>Part 3: The Live Demo</h2>
+                <p>Watch as we build a viral video concept from a single prompt—<strong>live</strong>.</p>
+                <div class="grid">
+                    <div class="card">
+                        <h3>The Master Prompt</h3>
+                        <pre>You are "Germaine Tan", a funny, relatable Singaporean content creator. **TASK:** React to a news story, express shock, and generate a 30-80s SSML script.</pre>
+                    </div>
+                    <div class="card">
+                        <h3>The AI-Generated Script</h3>
+                        <pre>&lt;speak&gt;...Wah lao eh... this bro went to Far East Plaza, asked to see a Rolex... then he just &lt;emphasis&gt;dashed out&lt;/emphasis&gt;!... Like and follow for more...&lt;/speak&gt;</pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW VOICE AI SECTIONS -->
+        <section id="voice-login">
+            <div class="container">
+                <h2>Part 4: Voice AI - Step 1/3</h2>
+                <p>Let's begin the process of turning our script into a voiceover.</p>
+                <div class="card" style="max-width: 600px; margin: 20px auto; text-align: center;">
+                    <h3>Create Account & Login</h3>
+                    <p>First, we'll get everyone set up with a free account on ElevenLabs.</p>
+                    <img src="voice-login.jpg" alt="A clean graphic of a login screen" class="image-placeholder">
+                </div>
+            </div>
+        </section>
+
+        <section id="voice-dashboard">
+            <div class="container">
+                <h2>Part 4: Voice AI - Step 2/3</h2>
+                <p>A quick tour of the dashboard to get you comfortable with the layout.</p>
+                <div class="card" style="max-width: 600px; margin: 20px auto; text-align: center;">
+                    <h3>Navigating the Dashboard</h3>
+                    <p>We'll locate the main tools: the Voice Library and the Speech Synthesis editor.</p>
+                    <img src="voice-dashboard.jpg" alt="An illustration of a clean user dashboard" class="image-placeholder">
+                </div>
+            </div>
+        </section>
+
+        <section id="voice-generate">
+            <div class="container">
+                <h2>Part 4: Voice AI - Step 3/3</h2>
+                <p>Now, let's bring our script to life.</p>
+                <div class="card" style="max-width: 600px; margin: 20px auto; text-align: center;">
+                    <h3>Generate Your Voiceover</h3>
+                    <p>Paste the SSML script, choose a pre-made voice, and hit "Generate".</p>
+                    <img src="voice-generate.jpg" alt="An illustration of a text-to-speech interface in action" class="image-placeholder">
+                </div>
+            </div>
+        </section>
+        
+        <section id="ai-visuals">
+            <div class="container">
+                <h2>Part 5: Creating Stunning Visuals</h2>
+                <p>The quality of your prompt <strong>directly</strong> determines the quality of your result. Let's see the difference.</p>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Bad Prompt 👎</h3>
+                        <pre>"a person working"</pre>
+                        <p>Vague and generic. The AI has to guess, resulting in a boring image.</p>
+                        <img src="bad-prompt-result.png" alt="Generic image of a person at a desk" class="image-placeholder">
+                    </div>
+                    <div class="card">
+                        <h3>Good Prompt 👍</h3>
+                        <pre>"Photorealistic, artist in futuristic SG studio, painting on digital canvas, Marina Bay view, cinematic light, 8k"</pre>
+                        <p>Specific and detailed. Give the AI a clear vision, and it will deliver.</p>
+                        <img src="good-prompt-result.png" alt="Stunning, detailed image of an artist in a futuristic studio" class="image-placeholder">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="assembly-import">
+            <div class="container">
+                <h2>Part 6: Assembly - Import & Sync</h2>
+                <p>Let's open CapCut and begin building our video.</p>
+                <div class="card" style="max-width: 600px; margin: 20px auto; text-align: center;">
+                    <h3>Step 1: The Foundation</h3>
+                    <p>Drag & drop your AI voiceover and video clips. Lay audio first, then match visuals.</p>
+                    <img src="capcut-import.jpg" alt="Screenshot of CapCut showing import" class="image-placeholder">
+                </div>
+            </div>
+        </section>
+
+        <section id="assembly-captions">
+            <div class="container">
+                <h2>Part 7: Assembly - Auto Captions</h2>
+                <p>This is the magic button that boosts viewer retention.</p>
+                <div class="card" style="max-width: 600px; margin: 20px auto; text-align: center;">
+                    <h3>Step 2: One-Click Engagement</h3>
+                    <p>Generate perfectly synced, stylized captions with a <strong>single click.</strong></p>
+                    <img src="capcut-captions.jpg" alt="Screenshot of CapCut Auto Captions" class="image-placeholder">
+                </div>
+            </div>
+        </section>
+
+        <section id="assembly-export">
+            <div class="container">
+                <h2>Part 8: Assembly - Export</h2>
+                <p>The final step before uploading. Let's get the settings right.</p>
+                <div class="card" style="max-width: 600px; margin: 20px auto; text-align: center;">
+                     <h3>Step 3: Finalize & Ship</h3>
+                    <p>Use optimal settings (<strong>1080p, 30fps</strong>) for maximum quality on TikTok.</p>
+                    <img src="capcut-export.jpg" alt="Screenshot of CapCut's export settings" class="image-placeholder">
+                </div>
+            </div>
+        </section>
+
+        <section id="practical">
+            <div class="container">
+                <h2>Part 9: Guided Practical</h2>
+                <p>Your turn! <strong>Pair up</strong> and apply the full workflow. Create a promo video for a real product.</p>
+                <h3>Choose Your Product Category:</h3>
+                <div class="grid">
+                    <div class="card">
+                        <h4>LifeTechSG (Smart Home)</h4>
+                        <div class="image-placeholder image-placeholder-small" style="background-image: url('lifetechsg_product_1.jpg');"></div>
+                    </div>
+                    <div class="card">
+                        <h4>Enjoy Dowas (Cleaning)</h4>
+                        <div class="image-placeholder image-placeholder-small" style="background-image: url('enjoydowas_product_1.jpg');"></div>
+                    </div>
+                    <div class="card">
+                        <h4>Beatederm (Beauty)</h4>
+                        <div class="image-placeholder image-placeholder-small" style="background-image: url('beatederm_product_1.jpg');"></div>
+                    </div>
+                </div>
+                <img src="collaboration-workshop.png" alt="Two people collaborating on a laptop in a workshop setting" class="image-placeholder">
+            </div>
+        </section>
+        
+        <section id="launch">
+            <div class="container">
+                <h2>Part 10: Launch & Competition</h2>
+                <p>Time to go live and spark some friendly competition!</p>
+                <div class="grid">
+                    <div class="card">
+                        <h3>TikTok Upload</h3>
+                        <ul>
+                            <li>Upload your finished video.</li>
+                            <li>Use AI-generated captions.</li>
+                            <li>Add relevant hashtags.</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>The Viral Challenge!</h3>
+                        <ul>
+                            <li>Most views by <strong>11 AM tomorrow</strong> wins!</li>
+                            <li>A grand prize awaits the winning team.</li>
+                            <li>Good luck!</li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="tiktok-viral.png" alt="A smartphone screen showing a TikTok video with rapidly increasing view counts" class="image-placeholder">
+                <h2>Q&A and Thank You!</h2>
+            </div>
+        </section>
+
+    </main>
+    
+    <script>
+    // --- JAVASCRIPT LOGIC (Unchanged) ---
+    document.addEventListener('DOMContentLoaded', function() {
+        const navLinks = document.querySelectorAll('nav a');
+        const sections = document.querySelectorAll('section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    const id = entry.target.getAttribute('id');
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }, { threshold: 0.5 });
+        sections.forEach(section => { observer.observe(section); });
+    });
+    </script>
+
+</body>
+</html>
